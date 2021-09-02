@@ -9,6 +9,11 @@ public enum XzSerializationTypeEnum {
      * JSON序列化
      */
     JSON(0),
+
+    /**
+     * PROTOSTUFF序列化方式
+     */
+    PROTOSTUFF(1),
     ;
 
     private int type;

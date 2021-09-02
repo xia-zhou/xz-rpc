@@ -1,6 +1,6 @@
 package com.xz.rpc.serialization;
 
-import com.xz.rpc.serialization.json.XzJsonSerialization;
+import com.xz.rpc.serialization.protostuff.XzProtostuffSerialization;
 
 /**
  * @author zhangsong
@@ -13,6 +13,6 @@ public class XzSerializationFactory {
      * @return
      */
     public static XzSerialization get(byte serializationType) {
-        return new XzJsonSerialization();
+        return new XzProtostuffSerialization();
     }
 }
